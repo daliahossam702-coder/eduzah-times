@@ -1736,3 +1736,16 @@ select {
     }
 
 }
+
+
+@media screen and (max-width:450px){
+   
+    .signup-container {
+        width: 100%;
+        max-width: 65%;
+
+        padding: 20px;
+
+    }
+
+}
