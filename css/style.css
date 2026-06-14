@@ -1052,6 +1052,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 select {
     appearance: none;
 }
+select:valid {
+       color: #666;
+
+}
+
 
 .input-box i {
     position: absolute;
