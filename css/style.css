@@ -1048,6 +1048,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(41%) sepia(94%) saturate(2474%) hue-rotate(307deg) brightness(101%) contrast(101%);
 
 }
+input[type="date"] {
+         color: #666;
+}
 
 select {
     appearance: none;
