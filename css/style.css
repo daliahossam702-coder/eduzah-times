@@ -1455,11 +1455,10 @@ select:valid {
         text-align: left;
     }
 
-
-
-
     .Categories-box {
-        width: 90%;
+       
+        width: 100%;
+         max-width: 300px;
         height: auto;
     }
 
