@@ -219,7 +219,7 @@ header .content p {
     background-color: #E83E8C;
     color: #f8f8f8;
 }
- 
+
 
 /* ===== TICKER ===== */
 .ticker {
@@ -338,13 +338,11 @@ header .content p {
     min-width: 300px;
 }
 
-
 /* ===== TEXT ===== */
 .about-content .col h2 {
     text-align: left;
     color: #E83E8C;
     padding-left: 150px;
-
 }
 
 .about-content p {
@@ -438,7 +436,7 @@ header .content p {
     display: inline-block;
     width: 100%;
     max-width: 400px;
-    height: 52vh;
+    min-height: 52vh;
     margin: 20px;
     padding: 20px;
     border-radius: 6px;
@@ -554,14 +552,14 @@ header .content p {
 
     overflow: hidden;
 
-  background: linear-gradient(white, white) padding-box,
-              linear-gradient(145deg, transparent 35%,#ff587f, #E83E8C) border-box;
-  border: 2px solid transparent;
-  border-radius: 20px;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(145deg, transparent 35%, #ff587f, #E83E8C) border-box;
+    border: 2px solid transparent;
+    border-radius: 20px;
 }
 
-.container .contact-content  {
-  flex: 1;
+.container .contact-content {
+    flex: 1;
 }
 
 /* ===== LAYOUT =====*/
@@ -1048,15 +1046,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(41%) sepia(94%) saturate(2474%) hue-rotate(307deg) brightness(101%) contrast(101%);
 
 }
+
 input[type="date"] {
-         color: #666;
+    color: #666;
 }
 
 select {
     appearance: none;
 }
+
 select:valid {
-       color: #666;
+    color: #666;
 
 }
 
@@ -1194,7 +1194,6 @@ select:valid {
     margin-right: 10px;
     transition: all 0.3s ease;
 
-
 }
 
 #footer .footer-top .row .col-1 .social a:hover {
@@ -1242,7 +1241,7 @@ select:valid {
     position: relative;
 }
 
-#footer .footer-top .row .col-4 input {
+#footer .footer-top .row .col-4 form input {
 
     padding: 15px;
     width: 100%;
@@ -1251,6 +1250,11 @@ select:valid {
     border: 1px solid white;
     border-radius: 5px;
     outline-color: none;
+    /* position: relative; */
+
+}
+
+#footer .footer-top .row .col-4 form {
     position: relative;
 
 }
@@ -1264,14 +1268,15 @@ select:valid {
 }
 
 
-#footer .footer-top .row .col-4 button {
+#footer .footer-top .row .col-4 form button {
     position: absolute;
     right: 0;
-    bottom: 62px;
+    top: 0;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding: 15.5px 15px;
+    padding: 0 15px;
+    min-height: 49px;
 
 }
 
@@ -1306,6 +1311,56 @@ select:valid {
 
 
 /* ================= RESPONSIVE ================= */
+@media(max-width:1100px) {
+
+    #Home .navbar img {
+        width: 100%;
+        max-width: 130px;
+
+    }
+
+    #Home .navbar .nav ul {
+        display: flex;
+        list-style: none;
+        margin-left: 10%;
+    }
+
+    .search-btn {
+
+        position: relative;
+        left: -20px;
+    }
+
+    .about-content p::after {
+        width: 90%;
+        max-width: 350px;
+        left: 62%;
+
+    }
+
+    .about-content .col img {
+        width: 100%;
+        margin-top: 80PX;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #footer .footer-top .row .col-1 .social a {
+        padding: 5px;
+
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 35px;
+    }
+
+}
+
 
 @media(max-width:768px) {
     #Home .navbar img {
@@ -1430,19 +1485,20 @@ select:valid {
         opacity: 1;
 
     }
-   .dropdown{
-    position: relative;
-}
 
-.dropdown-content{
-    position: absolute;
-    top: 0;
-    right: 100%;
-    min-width: 200px;
-    background: #fff;
-    z-index: 1000;
-    border-radius: 18px;
-}
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        min-width: 200px;
+        background: #fff;
+        z-index: 1000;
+        border-radius: 18px;
+    }
 
 
 
@@ -1471,9 +1527,9 @@ select:valid {
     }
 
     .Categories-box {
-       
+
         width: 100%;
-         max-width: 300px;
+        max-width: 300px;
         height: auto;
     }
 
@@ -1615,7 +1671,7 @@ select:valid {
 }
 
 @media screen and (max-width:576px) {
-     .nav ul {
+    .nav ul {
         position: absolute;
 
         top: 70px;
@@ -1692,15 +1748,15 @@ select:valid {
         z-index: 101;
     }
 
-.dropdown-content{
-    position: absolute;
-    top: 0;
-    right: 100%;
-    min-width: 100px;
-    background: #fff;
-    z-index: 1000;
-    border-radius: 18px;
-}
+    .dropdown-content {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        min-width: 100px;
+        background: #fff;
+        z-index: 1000;
+        border-radius: 18px;
+    }
 
     /* ===== HERO ===== */
 
@@ -1852,8 +1908,8 @@ select:valid {
 }
 
 
-@media screen and (max-width:450px){
-   
+@media screen and (max-width:450px) {
+
     .signup-container {
         width: 100%;
         max-width: 65%;
