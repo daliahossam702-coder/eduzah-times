@@ -1311,7 +1311,18 @@ select:valid {
 
 
 /* ================= RESPONSIVE ================= */
-@media(max-width:1100px) {
+@media(max-width:1500px) {
+  .login-container {
+        padding: 30px;
+    }
+     .search-btn {
+
+        position: relative;
+        left: 0px;
+     }
+
+}
+@media(max-width:1300px) {
 
     #Home .navbar img {
         width: 100%;
@@ -1394,7 +1405,6 @@ select:valid {
         position: relative;
         left: -80px;
     }
-
 
 
     .nav ul {
@@ -1496,7 +1506,7 @@ select:valid {
         right: 100%;
         min-width: 200px;
         background: #fff;
-        z-index: 1000;
+        z-index: 1001;
         border-radius: 18px;
     }
 
@@ -1672,37 +1682,12 @@ select:valid {
 
 @media screen and (max-width:576px) {
     .nav ul {
-        position: absolute;
-
-        top: 70px;
-        right: 15px;
-
         width: 240px;
 
-        background: white;
 
-        flex-direction: column;
-        align-items: flex-start;
-
-        border-radius: 18px;
-
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-
-        max-height: 0;
-        overflow: hidden;
-
-        transition: 0.5s;
-
-        padding: 0 20px;
-
-        z-index: 100;
     }
 
-    #check:checked~ul {
-        max-height: 800px;
-        padding: 20px 20px 110px 0px;
-        overflow: visible;
-    }
+
 
     .nav ul li {
         margin: 12px 0;
@@ -1718,34 +1703,14 @@ select:valid {
 
         width: 200px;
 
-        opacity: 0;
 
-        transition: 0.5s;
-
-        z-index: 101;
     }
 
-    /* .log-in a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    } */
-
-
-
     .Sign-up {
-        position: absolute;
 
-        top: 320px;
-        right: 40px;
 
         width: 200px;
 
-        opacity: 0;
-
-        transition: 0.5s;
-
-        z-index: 101;
     }
 
     .dropdown-content {
@@ -1916,6 +1881,38 @@ select:valid {
 
         padding: 20px;
 
+    }
+
+    .nav ul {
+        width: 210px;
+
+
+    }
+
+
+
+    .nav ul li {
+        margin: 12px 0;
+    }
+
+
+    .log-in {
+        width: 170px;
+    }
+
+    .Sign-up {
+        width: 170px;
+
+    }
+
+    .dropdown-content {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        max-width: 140px;
+        background: #fff;
+        z-index: 1000;
+        border-radius: 18px;
     }
 
 }
